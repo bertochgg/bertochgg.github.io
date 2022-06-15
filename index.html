@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Encryption</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header__menu">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <figure>
+            <img src="/assets/caesar-cipher.png" alt="Caesar cipher" class="caesar-img">
+        </figure>
+        <section class="main__content">
+            <article class="main__title">
+                <h1>Caesar Encryption</h1>
+            </article>
+            <article class="main__description">
+                <p>It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on.</p>
+            </article>
+            <article class="main__inputs">
+                <!-- INPUT 1 -->
+                <div class="main__inputs--input1">
+                    <label>
+                        <span class="message-title">Message to encrypt: </span>
+                        <br>
+                        <textarea type="text" id="plainInput-1" placeholder="Type the message you want to encrypt"></textarea>
+                    </label>
+                    <br>
+                    <div class="main__inputs--input2">
+                        <label>
+                            <span class="message-title">Number of times to shift: </span>
+                            <input type="number" id="shiftInput" min='0' max='25' class="input-number">
+                        </label>
+                    </div>
+                    <button id="encrypt-btn" class="encrypt-btn">Encrypt Message</button>
+                </div>
+                <!-- INPUT 2 -->
+                
+                <!-- INPUT 3 -->
+                <div class="main__inputs--input3">
+                    <label>
+                        <span class="message-title">Message encrypted: </span>
+                        <br>
+                        <textarea type="text" id="encryptedInput-1" placeholder="Your message encrypted will appear here"></textarea>
+                    </label>
+                </div>
+            </article>
+        </section>
+                
+
+    </main>
+    <footer>
+        <p>Created by BERTOCHGG</p>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="/app.js"></script>
+</body>
+</html>

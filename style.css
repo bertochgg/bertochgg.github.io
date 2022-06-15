@@ -1,0 +1,148 @@
+:root{
+    --color-primary: #FC466B;
+    --color-secondary: #3F5EFB;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+}
+/* Header Style */
+figure{
+    height: 20px;
+    width: 30px;
+}
+.caesar-img{
+    position: absolute;
+    width: 400px;
+    top: 70px;
+    left: 120px;
+}
+nav{
+    cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* Move navbar */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+
+ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+}
+
+ul li{
+    letter-spacing: 2px;
+    margin-left: 35px;
+}
+
+/* Content Style */
+.main__content{
+    max-width: 600px;
+    max-height: auto;
+    margin: 120px auto;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.main__title{
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.18);
+    color: rgb(47, 14, 139);
+    font-size: 1.8rem;
+}
+
+.main__description{
+    margin: 20px;
+    color: rgb(216, 216, 216);
+    text-align: center;
+    border-bottom-width: 600px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.18);
+}
+
+/* Inputs Style */
+.main__inputs{
+    align-self: center;
+    margin-left: 20px;
+}
+
+.main__inputs--input1{
+    
+}
+
+.message-title{
+    color: rgb(216, 216, 216);
+}
+
+/* Inputs: Tags Style */
+::placeholder{
+    color: rgb(47, 14, 139);
+}
+textarea{
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.18);
+    cursor: pointer;
+    color: rgb(47, 14, 139);
+    min-width: 100px;
+    max-width: 500px;
+    width: 500px;
+    height: 100px;
+}
+
+.encrypt-btn{
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.18);
+    cursor: pointer;
+    color: rgb(216, 216, 216);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.encrypt-btn:hover{
+    background: linear-gradient(135deg, rgba(47, 14, 139, 0.1), rgba(47,14,139,0));
+}
+
+
+.input-number{
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.18);
+    cursor: pointer;
+    color: rgb(216, 216, 216);
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.main__inputs--input2{
+    margin-bottom: 10px;
+}
+
+/* Footer Style */
+footer{
+    background-color: var(--color-secondary);
+    padding: 1em 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
