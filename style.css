@@ -52,7 +52,7 @@ ul li{
 .main__content{
     max-width: 600px;
     max-height: auto;
-    margin: 120px auto;
+    margin: 20px auto;
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -108,7 +108,8 @@ textarea{
     height: 100px;
 }
 
-.encrypt-btn{
+.encrypt-btn,
+.decrypt-btn{
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
     border-radius: 5px;
     border: 1px solid rgba(255,255,255,0.18);
@@ -119,6 +120,10 @@ textarea{
 }
 
 .encrypt-btn:hover{
+    background: linear-gradient(135deg, rgba(47, 14, 139, 0.1), rgba(47,14,139,0));
+}
+
+.decrypt-btn:hover{
     background: linear-gradient(135deg, rgba(47, 14, 139, 0.1), rgba(47,14,139,0));
 }
 
@@ -145,4 +150,13 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+/* Divider Style */
+.divider{
+    width: 557px;
+    height: 1px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.18);
+    margin-bottom: 10px;
 }

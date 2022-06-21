@@ -1,5 +1,7 @@
 let encryptBtn = document.getElementById('encrypt-btn');
+let decryptBtn = document.getElementById('decrypt-btn')
 let eInput = document.getElementById('encryptedInput-1');
+let dInput = document.getElementById('decryptedInput-1')
 let pInput = document.getElementById('plainInput-1');
 let inputs = [eInput, pInput];
 
@@ -23,3 +25,16 @@ function encrypt(){
 }
 
 encryptBtn.addEventListener('click', encrypt)
+
+function decrypt(){
+    let keyMessage = prompt('Please enter the decrypt key');
+    let conversion = keyMessage.toLowerCase();
+    let pInput = document.getElementById('plainInput-1').value;
+    if(conversion == 'bertochgg'){
+        dInput.value = pInput;
+    }else{
+        alert('The decrypt key is incorrect, please try again.')
+    }
+}
+
+decryptBtn.addEventListener('click', decrypt)
