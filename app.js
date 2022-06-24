@@ -27,7 +27,7 @@ function encrypt(){
 encryptBtn.addEventListener('click', encrypt)
 
 function decrypt(){
-    let keyMessage = prompt('Please enter the decrypt key');
+    let keyMessage = prompt('Please enter the decrypt key. The decrypt key is: bertochgg');
     let conversion = keyMessage.toLowerCase();
     let pInput = document.getElementById('plainInput-1').value;
     if(conversion == 'bertochgg'){
